@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valopedia - Home</title>
+    <!-- Font and Background Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script src="scripts/tailwind-config.js"></script>
+  </head>
+  <body class="min-h-screen font-din-next">
+    <div class="bg-black bg-opacity-50 min-h-screen">
+      <!-- Navigation Bar -->
+      <nav class="bg-gray-800 bg-opacity-75 text-white">
+        <!-- Desktop Navigation Menu -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <!-- Website Logo -->
+              <a href="index.html" class="flex-shrink-0 flex">
+                <img
+                  class="h-8 w-8"
+                  src="images/valorant-circle-icon.svg?height=32&width=32"
+                  alt="Valorant Logo"
+                />
+                <h1 class="text-2xl text-center ms-1 font-tungsten text-white">
+                  VALOPEDIA
+                </h1>
+              </a>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a
+                    href="index.html"
+                    class="px-3 py-2 rounded-md text-sm font-medium bg-gray-900"
+                    >Home</a
+                  >
+                  <a
+                    href="agents.html"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    >Agents</a
+                  >
+                  <a
+                    href="maps.html"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    >Maps</a
+                  >
+                  <a
+                    href="weapons.html"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    >Weapons</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Navigation Menu Button -->
+            <div class="-mr-2 flex md:hidden">
+              <button
+                type="button"
+                id="mobileMenuButton"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!-- Hamburger Icon -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="index.html"
+              class="block px-3 py-2 rounded-md text-base font-medium bg-gray-900"
+              >Home</a
+            >
+            <a
+              href="agents.html"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              >Agents</a
+            >
+            <a
+              href="maps.html"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              >Maps</a
+            >
+            <a
+              href="weapons.html"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              >Weapons</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <main class="min-h-[80vh] max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <!-- Page Header -->
+        <h1
+          class="text-6xl font-bold text-center mb-8 font-tungsten text-white"
+        >
+          Welcome to VALOPEDIA!
+        </h1>
+        <!-- Section Navigation -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="agents.html" class="block">
+            <div
+              class="bg-white bg-opacity-75 overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="/images/card-image-agents.jpg"
+                alt="Valorant Agents"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-bold mb-2 font-tungsten">Agents</h2>
+                <p class="text-gray-700 font-din-next">
+                  Explore the diverse cast of Valorant agents and their unique
+                  abilities.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="maps.html" class="block">
+            <div
+              class="bg-white bg-opacity-75 overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="images/card-image-maps.jpg"
+                alt="Valorant Maps"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-bold mb-2 font-tungsten">Maps</h2>
+                <p class="text-gray-700 font-din-next">
+                  Discover the various battlegrounds where Valorant matches take
+                  place.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="weapons.html" class="block">
+            <div
+              class="bg-white bg-opacity-75 overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                class="w-full h-48 object-cover"
+                src="images/card-image-weapons.jpg"
+                alt="Valorant Weapons"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-bold mb-2 font-tungsten">Weapons</h2>
+                <p class="text-gray-700 font-din-next">
+                  Learn about the arsenal of weapons available in Valorant.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <!-- Page Footer -->
+      <footer class="bg-gray-800 bg-opacity-75 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-fit py-4">
+            <div class="flex items-center">
+              <img
+                class="h-8 w-8 me-3"
+                src="images/valorant-circle-icon.svg?height=32&width=32"
+                alt="Valopedia Logo"
+              />
+              <p class="text-white">
+                Copyright © 2024 Valopedia<br />This site uses information from
+                <a>Valorant-API</a>.
+              </p>
+            </div>
+            <div class="block">
+              <div class="ml-10 flex items-baseline space-x-1">
+                <a
+                  href="https://valorant-api.com/"
+                  target="_blank"
+                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                >
+                  <img
+                    class="h-8 w-8"
+                    src="images/valo-api-logo.png"
+                    alt="Visit Valorant-API"
+                  />
+                </a>
+                <a
+                  href="https://github.com/CyboBrown/valopedia"
+                  target="_blank"
+                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                >
+                  <img
+                    class="h-8 w-8"
+                    src="images/github-mark-white.svg?height=32&width=32"
+                    alt="Visit Our Github Repo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Show or hide mobile menu on click
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuButton = document.getElementById('mobileMenuButton')
+        const mobileMenu = document.getElementById('mobile-menu')
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden')
+        })
+      })
+    </script>
+  </body>
+</html>
