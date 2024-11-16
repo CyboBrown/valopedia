@@ -17,7 +17,7 @@ async function fetchWeapons() {
 
 // Generate weapon card from given weapon
 function createWeaponCard(weapon) {
-  const card = document.createElement('div')
+  const card = document.createElement('card')
   card.className =
     'bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105'
   card.innerHTML = `
