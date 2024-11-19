@@ -17,7 +17,7 @@ async function fetchMaps() {
 
 // Generate map card from given map
 function createMapCard(map) {
-  const card = document.createElement('card')
+  const card = document.createElement('div')
   card.className =
     'bg-white bg-opacity-75 rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105'
   card.innerHTML = `

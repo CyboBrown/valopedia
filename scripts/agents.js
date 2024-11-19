@@ -17,7 +17,7 @@ async function fetchAgents() {
 
 // Generate agent card from given agent
 function createAgentCard(agent) {
-  const card = document.createElement('card')
+  const card = document.createElement('div')
   card.className =
     'bg-gradient-to-b from-[#' +
     agent.backgroundGradientColors[0] +
