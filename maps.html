@@ -9,12 +9,12 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Tailwind Configuration -->
-    <script src="scripts/tailwind-config.js"></script>
+    <script src="tailwind.config.js"></script>
   </head>
   <body class="min-h-screen font-din-next">
     <div class="bg-black bg-opacity-50 min-h-screen">
       <!-- Navigation Bar -->
-      <nav class="bg-gray-800 bg-opacity-75 text-white">
+      <nav class="bg-darkest/75 text-white">
         <!-- Desktop Navigation Menu -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
@@ -34,22 +34,22 @@
                 <div class="ml-10 flex items-baseline space-x-4">
                   <a
                     href="index.html"
-                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-darker"
                     >Home</a
                   >
                   <a
                     href="agents.html"
-                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-darker"
                     >Agents</a
                   >
                   <a
                     href="maps.html"
-                    class="px-3 py-2 rounded-md text-sm font-medium bg-gray-900"
+                    class="px-3 py-2 rounded-md text-sm font-medium bg-darkest"
                     >Maps</a
                   >
                   <a
                     href="weapons.html"
-                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                    class="px-3 py-2 rounded-md text-sm font-medium hover:bg-darker"
                     >Weapons</a
                   >
                 </div>
@@ -60,7 +60,7 @@
               <button
                 type="button"
                 id="mobileMenuButton"
-                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="inline-flex items-center justify-center p-2 rounded-md text-light hover:text-white hover:bg-darker focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -90,22 +90,22 @@
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="index.html"
-              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-darker"
               >Home</a
             >
             <a
               href="agents.html"
-              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-darker"
               >Agents</a
             >
             <a
               href="maps.html"
-              class="block px-3 py-2 rounded-md text-base font-medium bg-gray-900"
+              class="block px-3 py-2 rounded-md text-base font-medium bg-darkest"
               >Maps</a
             >
             <a
               href="weapons.html"
-              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-darker"
               >Weapons</a
             >
           </div>
@@ -127,7 +127,7 @@
             type="text"
             id="search"
             placeholder="Search maps..."
-            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-700"
+            class="w-full px-4 py-2 rounded-md border border-lighter focus:outline-none focus:ring-2 focus:ring-darker"
           />
         </div>
         <div
@@ -153,7 +153,7 @@
                 class="text-2xl font-bold font-tungsten"
               ></h2>
               <!-- Close Button -->
-              <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+              <button id="closeModal" class="text-dark hover:text-darker">
                 <!-- Close Icon -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -179,11 +179,11 @@
             />
             <div
               id="modalMapCoordinates"
-              class="text-sm text-gray-600 mb-2 font-din-next"
+              class="text-sm text-darker mb-2 font-din-next"
             ></div>
             <p
               id="modalMapDescription"
-              class="text-gray-600 mb-4 font-din-next"
+              class="text-darker mb-4 font-din-next"
             ></p>
             <div id="modalMapBlueprint" class="mt-4">
               <h3 class="text-xl font-semibold mb-2">Map Blueprint:</h3>
@@ -191,7 +191,7 @@
                 id="modalMapBlueprintImage"
                 src=""
                 alt=""
-                class="bg-gray-900 w-full max-w-[80vh] rounded-lg mb-4"
+                class="bg-darkest w-full max-w-[80vh] rounded-lg mb-4"
               />
             </div>
           </div>
@@ -199,7 +199,7 @@
       </modal>
 
       <!-- Page Footer -->
-      <footer class="bg-gray-800 bg-opacity-75 text-white">
+      <footer class="bg-darkest/75 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="flex flex-col md:flex-row items-center justify-between h-fit py-4"
@@ -221,7 +221,7 @@
                 <a
                   href="https://valorant-api.com/"
                   target="_blank"
-                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-darker"
                 >
                   <img
                     class="h-8 w-8"
@@ -232,7 +232,7 @@
                 <a
                   href="https://github.com/CyboBrown/valopedia"
                   target="_blank"
-                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
+                  class="px-3 py-2 rounded-md text-sm font-medium hover:bg-darker"
                 >
                   <img
                     class="h-8 w-8"

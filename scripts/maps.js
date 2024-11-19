@@ -28,7 +28,7 @@ function createMapCard(map) {
                     <h2 class="text-xl font-semibold font-tungsten">${
                       map.displayName
                     }</h2>
-                    <p class="text-gray-600 font-din-next">${
+                    <p class="text-darker font-din-next">${
                       map.coordinates || 'Location Unknown'
                     }</p>
                 </div>
@@ -45,11 +45,11 @@ function showMapDetails(map) {
   document.getElementById('modalMapCoordinates').textContent =
     map.coordinates || 'Location Unknown'
   document.getElementById('modalMapCoordinates').className =
-    'text-sm text-gray-600 mb-2 font-din-next'
+    'text-sm text-darker mb-2 font-din-next'
   document.getElementById('modalMapDescription').textContent =
     map.narrativeDescription || 'No description available.'
   document.getElementById('modalMapDescription').className =
-    'text-gray-600 mb-4 font-din-next'
+    'text-darker mb-4 font-din-next'
   if (map.displayIcon) {
     document.getElementById('modalMapBlueprint').classList.remove('hidden')
     document.getElementById('modalMapBlueprintImage').src = map.displayIcon

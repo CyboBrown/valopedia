@@ -12,6 +12,15 @@
   font-style: normal;
 }
 
+:root {
+  --darkest: 17 24 39; /* gray-900 */
+  --darker: 55 65 81; /* gray-700 */
+  --dark: 107 114 128; /* gray-500 */
+  --light: 156 163 175; /* gray-400 */
+  --lighter: 209 213 219; /* gray-300 */
+  --lightest: 243 244 246; /* gray-100 */
+}
+
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -24,15 +33,6 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
-/* .no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-} */
 
 /* Scrollbar Width */
 ::-webkit-scrollbar {

@@ -28,12 +28,12 @@ function createWeaponCard(weapon) {
                     <h2 class="text-xl font-semibold font-tungsten">${
                       weapon.displayName
                     }</h2>
-                    <p class="text-gray-600 font-din-next">${
+                    <p class="text-darker font-din-next">${
                       weapon.shopData ? weapon.shopData.categoryText : 'Special'
                     }</p>
                     ${
                       weapon.shopData
-                        ? `<p class="text-sm text-gray-500 font-din-next">Cost: ${weapon.shopData.cost}</p>`
+                        ? `<p class="text-sm text-dark font-din-next">Cost: ${weapon.shopData.cost}</p>`
                         : ''
                     }
                 </div>
@@ -51,12 +51,12 @@ function showWeaponDetails(weapon) {
     ? weapon.shopData.categoryText
     : 'Special'
   document.getElementById('modalWeaponCategory').className =
-    'text-gray-600 font-din-next'
+    'text-darker font-din-next'
   document.getElementById('modalWeaponCost').textContent = weapon.shopData
     ? `${weapon.shopData.cost} Credits`
     : 'N/A'
   document.getElementById('modalWeaponCost').className =
-    'text-gray-600 font-din-next'
+    'text-darker font-din-next'
 
   const statsDiv = document.getElementById('modalWeaponStats')
   statsDiv.innerHTML = ''
@@ -77,18 +77,18 @@ function showWeaponDetails(weapon) {
     statItems.forEach((item) => {
       if (item.value) {
         const statDiv = document.createElement('div')
-        statDiv.className = 'bg-gray-50 p-3 rounded-lg'
+        statDiv.className = 'bg-lightest p-3 rounded-lg'
         statDiv.innerHTML = `
                             <h4 class="font-semibold">${item.label}</h4>
-                            <p class="text-gray-600">${item.value}</p>
+                            <p class="text-darker">${item.value}</p>
                         `
         statsDiv.appendChild(statDiv)
       }
     })
   } else {
     const statDiv = document.createElement('div')
-    statDiv.className = 'bg-gray-50 p-3 rounded-lg'
-    statDiv.innerHTML = `<p class="text-gray-600">No stats available.</p>`
+    statDiv.className = 'bg-lightest p-3 rounded-lg'
+    statDiv.innerHTML = `<p class="text-darker">No stats available.</p>`
     statsDiv.appendChild(statDiv)
   }
 
@@ -99,7 +99,7 @@ function showWeaponDetails(weapon) {
   weapon.skins.slice(0, 6).forEach((skin) => {
     if (skin.displayName.toLowerCase().includes('standard')) return
     const skinDiv = document.createElement('div')
-    skinDiv.className = 'bg-gray-50 p-3 rounded-lg'
+    skinDiv.className = 'bg-lightest p-3 rounded-lg'
     skinDiv.innerHTML = `
                     <img src="${skin.displayIcon || weapon.displayIcon}" alt="${
       skin.displayName
@@ -135,7 +135,7 @@ function updateWeaponGrid(filteredWeapons) {
   if (filteredWeapons.length === 0) {
     const noResults = document.createElement('p')
     noResults.textContent = 'No weapons found.'
-    noResults.className = 'text-center col-span-full text-gray-500'
+    noResults.className = 'text-center col-span-full text-dark'
     weaponGrid.appendChild(noResults)
   } else {
     filteredWeapons.forEach((weapon) => {

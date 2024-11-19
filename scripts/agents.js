@@ -36,7 +36,7 @@ function createAgentCard(agent) {
                     <h2 class="text-xl font-semibold font-tungsten">${
                       agent.displayName
                     }</h2>
-                    <p class="text-gray-300 font-din-next">${
+                    <p class="text-lighter font-din-next">${
                       agent.role ? agent.role.displayName : 'Unknown Role'
                     }</p>
                 </div>
@@ -60,13 +60,13 @@ function showAgentDetails(agent) {
   document.getElementById('modalAgentDescription').textContent =
     agent.description
   document.getElementById('modalAgentDescription').className =
-    'text-gray-300 mb-4 font-din-next rounded-lg shadow-md bg-gray-900 p-2'
+    'text-lighter mb-4 font-din-next rounded-lg shadow-md bg-darkest p-2'
   const abilitiesList = document.getElementById('modalAgentAbilities')
   abilitiesList.innerHTML = ''
   agent.abilities.forEach((ability) => {
     const li = document.createElement('li')
     li.textContent = `${ability.displayName}: ${ability.description}`
-    li.className = 'text-white rounded-lg shadow-md bg-gray-900 p-2'
+    li.className = 'text-white rounded-lg shadow-md bg-darkest p-2'
     abilitiesList.appendChild(li)
   })
   document.getElementById('agentModal').classList.remove('hidden')
